@@ -1,6 +1,6 @@
 #include <vector>
 
-#include "../inc/IMemory.h"
+#include "IMemory.hpp"
 
 class Memory : public IMemory {
 private:

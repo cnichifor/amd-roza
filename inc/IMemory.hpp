@@ -1,4 +1,7 @@
-#include <stdint.h>
+#ifndef IMEMORY_HPP
+#define IMEMORY_HPP
+
+#include <cstdint>
 
 class IMemory {
 public:
@@ -8,3 +11,5 @@ public:
 
     virtual ~IMemory() = default;
 };
+
+#endif
