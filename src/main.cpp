@@ -1,11 +1,8 @@
-
-#include "CPU.h"
-
+#include "Memory.hpp"
 
 int main(void) {
-    write("Hi, Laurentiu\n");
-    getchar();
 
+    IMemory* memory = new Memory(5);
 
     return 0;
 }
