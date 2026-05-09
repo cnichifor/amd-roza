@@ -1,5 +1,4 @@
-#ifndef EXECUTE_HPP
-#define EXECUTE_HPP
+#pragma once
 
 #include <array>
 #include <cstdint>
@@ -40,5 +39,3 @@ public:
     bool isHalted() const override;
     bool getZeroFlag() const override;
 };
-
-#endif

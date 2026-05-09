@@ -1,5 +1,7 @@
+#pragma once
 #include <memory> // For std::unique_ptr
 #include "Components.hpp"
+#include "IInstructionFetch.hpp"
 class CPU {
 public:
     std::unique_ptr<IInstructionFetch> instructionFetch;

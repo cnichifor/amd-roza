@@ -1,5 +1,4 @@
-#ifndef DECODE_INSTRUCTION_HPP
-#define DECODE_INSTRUCTION_HPP
+#pragma 
 
 #include <cstdint>
 
@@ -31,5 +30,3 @@ public:
 
     bool request_to_memory() const override;
 };
-
-#endif

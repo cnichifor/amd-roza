@@ -1,5 +1,4 @@
-#ifndef INSTRUCTION_FETCH_HPP
-#define INSTRUCTION_FETCH_HPP
+#pragma once
 
 #include <cstdint>
 #include "ILoadStore.hpp"
@@ -24,5 +23,3 @@ public:
 
     void advanceIP(uint16_t bytes);
 };
-
-#endif

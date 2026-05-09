@@ -1,5 +1,4 @@
-#ifndef LOADSTORE_HPP
-#define LOADSTORE_HPP
+#pragma once
 
 #include <cstdint>
 #include "ILoadStore.hpp"
@@ -17,5 +16,3 @@ public:
     uint16_t load16(uint16_t address) override;
     void store16(uint16_t address, uint16_t value) override;
 };
-
-#endif

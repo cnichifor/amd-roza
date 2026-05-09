@@ -1,5 +1,4 @@
-#ifndef IEXECUTE_HPP
-#define IEXECUTE_HPP
+#pragma once
 
 #include <cstdint>
 
@@ -17,5 +16,3 @@ public:
 
     virtual ~IExecute() = default;
 };
-
-#endif

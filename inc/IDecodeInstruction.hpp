@@ -1,5 +1,4 @@
-#ifndef IDECODE_INSTRUCTION_HPP
-#define IDECODE_INSTRUCTION_HPP
+#pragma once
 
 #include "Instruction.hpp"
 #include "InstructionFetch.hpp"
@@ -16,5 +15,3 @@ public:
 
     virtual ~IDecodeInstruction() = default;
 };
-
-#endif

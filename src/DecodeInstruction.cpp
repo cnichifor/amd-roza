@@ -5,6 +5,6 @@ DecodeInstruction::DecodeInstruction() {
 }
 
 
-void DecodeInstruction::dos() {
-    std::cout << "DecodeInstruction was called\n";
-}
+// void DecodeInstruction::dos() {
+//     std::cout << "DecodeInstruction was called\n";
+// }

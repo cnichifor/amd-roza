@@ -1,5 +1,4 @@
-#ifndef ILOADSTORE_HPP
-#define ILOADSTORE_HPP
+#pragma once
 
 #include <cstdint>
 
@@ -12,5 +11,3 @@ public:
 
     virtual ~ILoadStore() = default;
 };
-
-#endif

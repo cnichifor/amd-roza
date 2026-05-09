@@ -1,10 +1,10 @@
 #include "./../inc/Execute.hpp"
 
-Execute::Execute() {
+// Execute::Execute() {
 
-}
+// }
 
 
-void Execute::dos() {
-    std::cout << "Execute was called\n";
-}
+// void Execute::dos() {
+//     std::cout << "Execute was called\n";
+// }

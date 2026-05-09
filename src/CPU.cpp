@@ -13,7 +13,7 @@ void CPU::cpu()
 {
     std::cout << "cpu\n";
     instructionFetch->dos();
-    decodeInstruction->dos();
-    loadStore->dos();
-    execute->dos();
+    // decodeInstruction->dos();
+    // loadStore->dos();
+    // execute->dos();
 }

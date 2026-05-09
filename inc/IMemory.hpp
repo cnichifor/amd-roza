@@ -1,5 +1,4 @@
-#ifndef IMEMORY_HPP
-#define IMEMORY_HPP
+#pragma once
 
 #include <cstdint>
 
@@ -13,5 +12,3 @@ public:
 
     virtual ~IMemory() = default;
 };
-
-#endif
