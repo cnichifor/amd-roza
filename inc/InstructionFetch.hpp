@@ -2,13 +2,11 @@
 
 #include <cstdint>
 #include "ILoadStore.hpp"
+#include "IInstructionFetch.hpp"
 
-struct FetchWindow {
-    uint16_t address; // adresa de unde s-a citit blocul
-    uint64_t data;    // fetch window de 64 biți
-};
 
-class InstructionFetch {
+
+class InstructionFetch : public IInstructionFetch {
 private:
     uint16_t ip;          // Instruction Pointer / Program Counter
     ILoadStore& loadStore; // comunicare prin interfață
