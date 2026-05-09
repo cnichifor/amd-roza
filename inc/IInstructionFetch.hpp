@@ -8,8 +8,8 @@ struct FetchWindow {
 
 class IInstructionFetch {
 public:
-virtual FetchWindow instruction_fetch();
-virtual void setIP(uint16_t newIP);
-virtual uint16_t getIP() const;
-virtual void advanceIP(uint16_t bytes);
+virtual FetchWindow instruction_fetch() = 0;
+virtual void setIP(uint16_t newIP) = 0;
+virtual uint16_t getIP() const = 0;
+virtual void advanceIP(uint16_t bytes) = 0;
 };

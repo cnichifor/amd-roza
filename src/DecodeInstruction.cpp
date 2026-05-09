@@ -65,7 +65,7 @@ DecodedInstruction DecodeInstruction::decode_instruction()
     case Opcode::ADD:
     case Opcode::SUB:
     case Opcode::DIV:
-        instruction.size = 3;
+        instruction.size = 4;
         instruction.dstReg = getByte(currentWindow.data, 1);
         instruction.srcReg = getByte(currentWindow.data, 2);
 
