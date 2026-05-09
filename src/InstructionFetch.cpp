@@ -1,16 +1,27 @@
 #include "./../inc/InstructionFetch.hpp"
 
 
-InstructionFetch::InstructionFetch(IMemory &memory) : memory(memory)
-{
-    
+InstructionFetch::InstructionFetch(ILoadStore& loadStore)
+    : ip(0), loadStore(loadStore) {
 }
 
-// void InstructionFetch::fetch()
-// {
-//     std::cout << "fetch()\n";
-// }
+FetchWindow InstructionFetch::instruction_fetch() {
+    FetchWindow window;
 
-void InstructionFetch::dos() {
-    std::cout << "InstructionFetch was called\n";
+    window.address = ip;
+    window.data = loadStore.requestInstructionFetch(ip);
+
+    return window;
+}
+
+void InstructionFetch::setIP(uint16_t newIP) {
+    ip = newIP;
+}
+
+uint16_t InstructionFetch::getIP() const {
+    return ip;
+}
+
+void InstructionFetch::advanceIP(uint16_t bytes) {
+    ip += bytes;
 }

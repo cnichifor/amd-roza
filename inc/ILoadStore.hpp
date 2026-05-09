@@ -1,9 +1,16 @@
-#pragma once
-#include <iostream>
+#ifndef ILOADSTORE_HPP
+#define ILOADSTORE_HPP
 
+#include <cstdint>
 
 class ILoadStore {
 public:
-    // virtual void request_to_memory() = 0;
-    virtual void dos()=0;
+    virtual uint64_t requestInstructionFetch(uint16_t address) = 0;
+
+    virtual uint16_t load16(uint16_t address) = 0;
+    virtual void store16(uint16_t address, uint16_t value) = 0;
+
+    virtual ~ILoadStore() = default;
 };
+
+#endif

@@ -1,8 +1,20 @@
-#pragma once
-#include <iostream>
+#ifndef IDECODE_INSTRUCTION_HPP
+#define IDECODE_INSTRUCTION_HPP
+
+#include "Instruction.hpp"
+#include "InstructionFetch.hpp"
 
 class IDecodeInstruction {
 public:
-    // virtual void decodeInstruction() = 0;
-    virtual void dos()=0;
+    virtual void receive_memory_data(const FetchWindow& window) = 0;
+
+    virtual DecodedInstruction decode_instruction() = 0;
+
+    virtual DecodedInstruction send_data_to_execute() const = 0;
+
+    virtual bool request_to_memory() const = 0;
+
+    virtual ~IDecodeInstruction() = default;
 };
+
+#endif
