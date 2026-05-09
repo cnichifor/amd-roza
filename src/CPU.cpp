@@ -56,10 +56,10 @@ void CPU::cpu()
         cycleCount++;
 
         if (cycleCount > 1000) {
-            std::cout << "  Too many cycles. isStoppedping CPU.\n";
+            std::cout << "  Too many cycles. CPU has stopped.\n";
             isStopped = true;
         }
     }
 
-    std::cout << "CPU isStoppedped after " << cycleCount << " cycles.\n";
+    std::cout << "CPU has stopped after " << cycleCount << " cycles.\n";
 }
