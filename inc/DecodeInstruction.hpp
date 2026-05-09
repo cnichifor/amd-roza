@@ -4,5 +4,6 @@
 class DecodeInstruction : public IDecodeInstruction {
 public:
     DecodeInstruction();
-    void decodeInstruction() override; 
+    // void decodeInstruction() override;
+    void dos() override; 
 };

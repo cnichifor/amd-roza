@@ -1,4 +1,4 @@
-#include "Memory.hpp"
+#include "./../inc/Memory.hpp"
 
 Memory::Memory(size_t size) : data(size, 0) {}
 
@@ -16,4 +16,8 @@ uint64_t Memory::read64(uint16_t address)  {
         value |= ((uint64_t)data[address + i]) << (16 * i);
     }
     return value;
+}
+
+void Memory::dos() {
+    std::cout << "memory was called\n";
 }
